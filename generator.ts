@@ -4,7 +4,7 @@ function encode(url) {
     var my_host = process.env.HOSTNAME+":"+(process.env.PORT || 3000);
     var short_string = generate(6);
     // build the short url
-    var full_url = "https://"+my_host+"/"+short_string;
+    var full_url = "http://"+my_host+"/"+short_string;
     // add to memory the shoet url and its value
     memory.set(full_url, url);
     return full_url;
