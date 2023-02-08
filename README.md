@@ -14,7 +14,7 @@ This is an API URL shortening service using Node and typescript.
  ## How to run:
 1. Install all dependencies.
 2. Run the Express server:
-	* run in terminal: `node server.ts`
+	* run in terminal: `node src/server.ts`
 3. Run API unit test:
 	* run in terminal: `yarn test:unit`
  
