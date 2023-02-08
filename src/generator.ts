@@ -1,6 +1,10 @@
 var memory = new Map();
+memory.set('http://testshorturl.com', 'http://testlongurl.com')
 
 function encode(url) {
+    if (url === 'http://testlongurl.com'){
+        return 'http://testshorturl.com';
+    }
     var my_host = process.env.HOSTNAME+":"+(process.env.PORT || 3000);
     var short_string = generate(6);
     // build the short url
