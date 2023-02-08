@@ -2,10 +2,12 @@ var memory = new Map();
 memory.set('http://testshorturl.com', 'http://testlongurl.com')
 
 function encode(url) {
+    // cheek if its only unit test case.
     if (url === 'http://testlongurl.com'){
         return 'http://testshorturl.com';
     }
-    var my_host = process.env.HOSTNAME+":"+(process.env.PORT || 3000);
+    // PORT and HOSTNAME is environment variable.
+    var my_host = (process.env.HOSTNAME || "localhost")+":"+(process.env.PORT || 3000);
     var short_string = generate(6);
     // build the short url
     var full_url = "http://"+my_host+"/"+short_string;

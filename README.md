@@ -22,7 +22,7 @@ This is an API URL shortening service using Node and typescript.
  ## Environment variable
  The environment variable are in `.env` file.</br>
  There is a PORT variable that used to be the port that the express server is running on.
-
+ You also have HOSTNAME and the default is "localhost" variable but if your process has a localhost name it will not override it. only if he could not find it.
 ## How to use the API:
 Now you're shorten API URL service is up and running on localhost!
 If you have not changed the PORT env variable the app is on port 3000, if you have, it's on that port.
