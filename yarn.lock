@@ -41,7 +41,7 @@
     debug "^4.1.0"
     gensync "^1.0.0-beta.2"
     json5 "^2.2.2"
-    semver "^6.3.0"
+    semver "^6.3.1"
 
 "@babel/generator@^7.20.7", "@babel/generator@^7.7.2":
   version "7.20.14"
@@ -1515,7 +1515,7 @@ istanbul-lib-instrument@^5.0.4, istanbul-lib-instrument@^5.1.0:
     "@babel/parser" "^7.14.7"
     "@istanbuljs/schema" "^0.1.2"
     istanbul-lib-coverage "^3.2.0"
-    semver "^6.3.0"
+    semver "^6.3.1"
 
 istanbul-lib-report@^3.0.0:
   version "3.0.0"
